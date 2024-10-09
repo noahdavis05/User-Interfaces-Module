@@ -142,6 +142,7 @@ CMakeFiles/testrect.dir/rect.cpp.o: /home/noah/learning/User-Interfaces-Module/l
 
 CMakeFiles/testrect.dir/testrect.cpp.o: /home/noah/learning/User-Interfaces-Module/lesson2/testrect.cpp \
   /home/noah/learning/User-Interfaces-Module/lesson2/rect.hpp \
+  /home/noah/learning/User-Interfaces-Module/lesson2/shape.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

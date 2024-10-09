@@ -129,12 +129,50 @@ testrect/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testrect.dir/build.make CMakeFiles/testrect.dir/build
 .PHONY : testrect/fast
 
+#=============================================================================
+# Target rules for targets named shapedemo
+
+# Build rule for target.
+shapedemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shapedemo
+.PHONY : shapedemo
+
+# fast build rule for target.
+shapedemo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/build
+.PHONY : shapedemo/fast
+
+circle.o: circle.cpp.o
+.PHONY : circle.o
+
+# target to build an object file
+circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/circle.cpp.o
+.PHONY : circle.cpp.o
+
+circle.i: circle.cpp.i
+.PHONY : circle.i
+
+# target to preprocess a source file
+circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/circle.cpp.i
+.PHONY : circle.cpp.i
+
+circle.s: circle.cpp.s
+.PHONY : circle.s
+
+# target to generate assembly for a file
+circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/circle.cpp.s
+.PHONY : circle.cpp.s
+
 rect.o: rect.cpp.o
 .PHONY : rect.o
 
 # target to build an object file
 rect.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testrect.dir/build.make CMakeFiles/testrect.dir/rect.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/rect.cpp.o
 .PHONY : rect.cpp.o
 
 rect.i: rect.cpp.i
@@ -143,6 +181,7 @@ rect.i: rect.cpp.i
 # target to preprocess a source file
 rect.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testrect.dir/build.make CMakeFiles/testrect.dir/rect.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/rect.cpp.i
 .PHONY : rect.cpp.i
 
 rect.s: rect.cpp.s
@@ -151,7 +190,32 @@ rect.s: rect.cpp.s
 # target to generate assembly for a file
 rect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testrect.dir/build.make CMakeFiles/testrect.dir/rect.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/rect.cpp.s
 .PHONY : rect.cpp.s
+
+shapedemo.o: shapedemo.cpp.o
+.PHONY : shapedemo.o
+
+# target to build an object file
+shapedemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/shapedemo.cpp.o
+.PHONY : shapedemo.cpp.o
+
+shapedemo.i: shapedemo.cpp.i
+.PHONY : shapedemo.i
+
+# target to preprocess a source file
+shapedemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/shapedemo.cpp.i
+.PHONY : shapedemo.cpp.i
+
+shapedemo.s: shapedemo.cpp.s
+.PHONY : shapedemo.s
+
+# target to generate assembly for a file
+shapedemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shapedemo.dir/build.make CMakeFiles/shapedemo.dir/shapedemo.cpp.s
+.PHONY : shapedemo.cpp.s
 
 testrect.o: testrect.cpp.o
 .PHONY : testrect.o
@@ -185,10 +249,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... shapedemo"
 	@echo "... testrect"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
 	@echo "... rect.o"
 	@echo "... rect.i"
 	@echo "... rect.s"
+	@echo "... shapedemo.o"
+	@echo "... shapedemo.i"
+	@echo "... shapedemo.s"
 	@echo "... testrect.o"
 	@echo "... testrect.i"
 	@echo "... testrect.s"
