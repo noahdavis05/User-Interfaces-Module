@@ -2,6 +2,7 @@ CMakeFiles/testrect.dir/testrect.cpp.o: \
  /home/noah/learning/User-Interfaces-Module/lesson2/testrect.cpp \
  /usr/include/stdc-predef.h \
  /home/noah/learning/User-Interfaces-Module/lesson2/rect.hpp \
+ /home/noah/learning/User-Interfaces-Module/lesson2/shape.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
